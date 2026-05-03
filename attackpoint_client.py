@@ -275,14 +275,3 @@ def get_report(output_filename: str = 'attackpoint_export.json') -> str:
             driver.quit()
         except Exception:
             pass
-
-
-if __name__ == '__main__':
-    # Simple CLI via env: if ATTACKPOINT_DESCRIPTION is set, write note; otherwise fetch report
-    description = os.getenv('ATTACKPOINT_DESCRIPTION')
-    if description:
-        write_note(description)
-        print('Note submitted')
-    else:
-        out = get_report('my_export.json')
-        print(out)
