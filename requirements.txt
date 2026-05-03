@@ -1,0 +1,11 @@
+Flask
+numpy
+pandas
+regex
+requests
+selenium
+urllib3
+webdriver-manager
+python-dotenv
+openai
+pydantic
